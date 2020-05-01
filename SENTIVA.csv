@@ -1,0 +1,110 @@
+DIALOGUE_ID,STEP_ID,SPEAKER,UTTERANCE,INTENT-SLOT,SENTIMENT
+1,1,User,good morning,greeting(),neutral
+1,1,Agent,hello what can i help you with today,request(),neutral
+1,2,User,i'd like to book a table with italian food,restaurant(food=italian),neutral
+1,2,Agent,i'm on it,inform(),neutral
+1,3,User,<SILENCE>,silence(),neutral
+1,3,Agent,where should it be,request(location),neutral
+1,4,User,in paris,inform(location=paris),neutral
+1,4,Agent,how many people would be in your party,request(people),neutral
+1,5,User,for six people please,inform(people=six),neutral
+1,5,Agent,which price range are looking for,request(price),neutral
+1,6,User,in a cheap price range please,inform(price=cheap),neutral
+1,6,Agent,What category restaurant are you looking for,request(category),neutral
+1,7,User,one star,inform(category=one),neutral
+1,7,Agent,ok let me look into some options for you,inform(),neutral
+1,8,User,<SILENCE>,silence(),neutral
+1,8,Agent,api_call italian paris six cheap,api_call(),neutral
+1,9,User,actually i would prefer for two people,update(people=two),neutral
+1,9,Agent,sure is there anything else to update,else(),neutral
+1,10,User,instead could it be in madrid,update(location=madrid),neutral
+1,10,Agent,sure is there anything else to update,else(),neutral
+1,11,User,instead could it be with spanish food,update(food=spanish),neutral
+1,11,Agent,sure is there anything else to update,else(),neutral
+1,12,User,no,inform(NO),neutral
+1,12,Agent,ok let me look into some options for you,inform(),neutral
+1,13,User,<SILENCE>,silence(),neutral
+1,13,Agent,api_call spanish madrid two cheap,api_call(),neutral
+1,14,User,<SILENCE>,silence(),neutral
+1,14,Agent,what do you think of this option: resto_madrid_cheap_spanish_8stars,option(),neutral
+1,15,User,no this does not work for me,inform(NO),negative
+1,15,Agent,sure let me find an other option for you,inform(),neutral
+1,16,User,<SILENCE>,silence(),neutral
+1,16,Agent,what do you think of this option: resto_madrid_cheap_spanish_6stars,option(),neutral
+1,17,User,no do you have something else,inform(NO),negative
+1,17,Agent,sure let me find an other option for you,inform(),neutral
+1,18,User,<SILENCE>,silence(),neutral
+1,18,Agent,what do you think of this option: resto_madrid_cheap_spanish_1stars,option(),neutral
+1,19,User,it's perfect,inform(YES),positive
+1,19,Agent,great let me do the reservation,inform(done),positive
+1,20,User,may i have the phone number of the restaurant resto_madrid_cheap_spanish_1stars,phone(res_name=resto_madrid_cheap_spanish_1stars),neutral
+1,20,Agent,here it is resto_madrid_cheap_spanish_1stars_phone,inform(done),neutral
+1,21,User,thanks,greeting(),positive
+1,21,Agent,is there anything i can help you with,else(),neutral
+1,22,User,no thank you,inform(NO),neutral
+1,22,Agent,you're welcome,greeting(),neutral
+,,,,,
+2,1,User,hello,greeting(),neutral
+2,1,Agent,hello what can i help you with today,request(),neutral
+2,2,User,i'd like to book a table at resto_london_cheap_british_8stars,book(res_name=resto_london_cheap_british_8stars),neutral
+2,2,Agent,how many people would be in your party,request(people),neutral
+2,3,User,for eight people please,inform(people=eight),neutral
+2,3,Agent,great let me do the reservation,inform(done),positive
+2,4,User,can you provide the address,address(),neutral
+2,4,Agent,here it is resto_london_cheap_british_8stars_address,inform(done),neutral
+,,,,,
+3,1,User,hi,greeting(),neutral
+3,1,Agent,hello what can i help you with today,greeting(),neutral
+3,2,User,i'd like to book a table with indian cuisine in a moderate price range for two people,"restaurant(food=indian,price=moderate,people=two)",neutral
+3,2,Agent,i'm on it,inform(),neutral
+3,3,User,<SILENCE>,silence(),neutral
+3,3,Agent,where should it be,request(location),neutral
+3,4,User,bombay please,inform(location=bombay),neutral
+3,4,Agent,What category restaurant are you looking for,request(category),neutral
+3,5,User,one star,inform(category=one),neutral
+3,5,Agent,ok let me look into some options for you,inform(),neutral
+3,6,User,<SILENCE>,silence(),neutral
+3,6,Agent,api_call indian bombay two moderate,api_call(),neutral
+3,7,User,actually i would prefer for four people,update(people=four),neutral
+3,7,Agent,sure is there anything else to update,else(),neutral
+3,8,User,actually i would prefer with french food,update(food=french),neutral
+3,8,Agent,sure is there anything else to update,else(),neutral
+3,9,User,actually i would prefer in a cheap price range,update(price=cheap),neutral
+3,9,Agent,sure is there anything else to update,else(),neutral
+3,10,User,no,inform(NO),neutral
+3,10,Agent,ok let me look into some options for you,inform(),neutral
+3,11,User,<SILENCE>,silence(),neutral
+3,11,Agent,api_call french bombay four cheap,api_call(),neutral
+3,12,User,<SILENCE>,silence(),neutral
+3,12,Agent,what do you think of this option: resto_bombay_cheap_french_8stars,option(),neutral
+3,13,User,no do you have something else,inform(NO),neutral
+3,13,Agent,sure let me find an other option for you,inform(),neutral
+3,14,User,<SILENCE>,silence(),neutral
+3,14,Agent,what do you think of this option: resto_bombay_cheap_french_3stars,option(),neutral
+3,15,User,no i don't like that,inform(NO),negative
+3,15,Agent,sure let me find an other option for you,inform(),neutral
+3,16,User,<SILENCE>,silence(),neutral
+3,16,Agent,what do you think of this option: resto_bombay_cheap_french_1stars,option(),neutral
+3,17,User,let's do it,inform(YES),positive
+3,17,Agent,great let me do the reservation,inform(done),positive
+3,18,User,may i have the address of the restaurant resto_bombay_cheap_french_1stars,address(res_name=resto_bombay_cheap_french_1stars),neutral
+3,18,Agent,here it is resto_bombay_cheap_french_1stars_address,inform(done),neutral
+3,19,User,thank you,greeting(),positive
+3,19,Agent,is there anything i can help you with,else(),neutral
+3,20,User,no thanks,inform(NO),neutral
+3,20,Agent,you're welcome,greeting(),neutral
+,,,,,
+4,1,User,hello,greeting(),neutral
+4,1,Agent,hello what can i help you with today,request(),neutral
+4,2,User,can you make a restaurant reservation at resto_rome_expensive_spanish_3stars,book(res_name=resto_rome_expensive_spanish_3stars),neutral
+4,2,Agent,how many people would be in your party,request(people),neutral
+4,3,User,four,inform(people=four),neutral
+4,3,Agent,great let me do the reservation,inform(done),positive
+4,4,User,actually i would prefer for five people,update(people=five),neutral
+4,4,Agent,sure is there anything else to update,else(),neutral
+4,5,User,no,inform(NO),neutral
+4,5,Agent,great let me do the reservation,inform(done),positive
+4,6,User,what is the phone number of the restaurant,phone(),neutral
+4,6,Agent,here it is resto_rome_expensive_spanish_3stars_phone,inform(done),neutral
+4,7,User,can you provide the address,address(),neutral
+4,7,Agent,here it is resto_rome_expensive_spanish_3stars_address,inform(done),neutral
