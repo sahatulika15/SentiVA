@@ -7,7 +7,7 @@
 
 * **Authors:** Tulika Saha, Sriparna Saha and Pushpak Bhattacharyya
 * **Affiliation:** Indian Institute of Technology Patna, India
-* **Corresponding Author:** [Tulika Saha](sahatulika15@gmail.com)
+* **Corresponding Author:** [Tulika Saha] (sahatulika15@gmail.com)
 * **Accepted(June, 2020):**  [PLOS ONE Journal](https://doi.org/10.1371/journal.pone.0235367)
 
 
