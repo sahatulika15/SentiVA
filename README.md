@@ -1,4 +1,4 @@
-# Sentiment aided Virtual Assistant (VA) : SentiVA
+# Sentiment aided Virtual Agent (VA) : SentiVA
 
 ## This is the readme file that contains the information about the SentiVA dataset introduced in the following paper
 
