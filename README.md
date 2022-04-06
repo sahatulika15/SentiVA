@@ -31,7 +31,7 @@ If you consider this dataset useful, please cite it as
 1. SentiVA dataset is curated by collecting conversations from an open sourced dialogue dataset named bAbI.
 2. The bAbI dataset contains conversations for a set of 6 tasks for testingend-to-end dialog systems in the Restaurant domain. Dialogues pertaining to task-4 and 5 were utilized to prepare conversations for the SentiVA dataset.
 3. The conversations from the bAbI dataset has been manually modified and annotated for the corresponding intent, slot and sentiment labels to make it suitable for developing a sentiment aided VA for multi-intent conversations.
-4. SentiVA dataset contains conversations concerning several multi-intents such as restaurant_info, restaurant_book, restaurant_phone, restaurant_address involving slots or entities such as <location>, <cuisine>, <no. of people>, <restaurant name> and <price>.
+4. SentiVA dataset contains conversations concerning several multi-intents such as restaurant_info, restaurant_book, restaurant_phone, restaurant_address involving slots or entities such as location, cuisine, no. of people, restaurant name and price.
   
 # Contact
   
